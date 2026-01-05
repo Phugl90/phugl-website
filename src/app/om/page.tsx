@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Om mig",
-  description: "Lær mere om Andreas Lausen - AI-konsulent med fokus på offentlig sektor.",
+  title: "Om phugl",
+  description: "phugl startede som et øgenavn, jeg tog ejerskab over. I dag er det mit arbejde: at gøre AI brugbart og trygt i hverdagen.",
 };
 
 export default function OmPage() {
@@ -11,48 +11,69 @@ export default function OmPage() {
     <div className="container mx-auto px-4 py-16">
       <div className="mx-auto max-w-3xl">
         {/* Header */}
-        <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">Om mig</h1>
+        <h1 className="text-4xl font-bold tracking-tight sm:text-5xl font-heading">Om phugl</h1>
 
-        {/* Intro */}
-        <div className="mt-8 prose prose-lg dark:prose-invert max-w-none">
-          <p className="text-xl text-muted-foreground">
-            Jeg hedder Andreas Lausen og arbejder som AI-konsulent med særligt fokus på
-            offentlig sektor og velfærdsområdet.
-          </p>
-
-          <h2>Min baggrund</h2>
-          <p>
-            Med en baggrund i både teknologi og politik har jeg en unik position til at
-            forstå de udfordringer og muligheder, der ligger i at implementere AI i
-            offentlige organisationer.
-          </p>
-          <p>
-            Jeg har arbejdet med AI-projekter i kommuner, regioner og statslige
-            organisationer, og har set både succeser og fejlslagne projekter. Det har
-            givet mig en dyb forståelse for, hvad der skal til for at få AI til at
-            skabe reel værdi.
+        {/* Content */}
+        <div className="mt-8 space-y-6 text-lg text-muted-foreground">
+          <p className="text-xl text-foreground">
+            Jeg er Andreas – også kendt som phugl (med ph).
           </p>
 
-          <h2>Min tilgang</h2>
           <p>
-            Jeg tror på, at AI skal implementeres ansvarligt og med mennesket i centrum.
-            Det handler ikke om at erstatte medarbejdere, men om at frigøre tid til det
-            arbejde, der virkelig kræver menneskelig indsigt og empati.
+            phugl startede som et øgenavn, jeg tog ejerskab over. I dag er det mit arbejde:
+            at tage noget, der virker tungt og uoverskueligt, og gøre det lettere i praksis.
           </p>
+
+          <p>
+            Jeg hjælper organisationer med at få AI til at virke i hverdagen – trygt,
+            konkret og uden hype. Vi kradser i overfladen af potentialet, men vi gør det brugbart.
+            Ikke smartere for smarthedens skyld – bare mere overskud, mere kvalitet og mindre bøvl.
+          </p>
+
+          <h2 className="text-2xl font-bold text-foreground pt-4 font-heading">Min tilgang</h2>
+
+          <p>
+            Jeg tror på, at løsninger skal virke mandag morgen. Det handler ikke om de nyeste
+            buzzwords eller de mest avancerede modeller. Det handler om at finde de steder,
+            hvor AI rent faktisk skaber værdi for jer.
+          </p>
+
           <p>Konkret betyder det, at jeg:</p>
-          <ul>
-            <li>Starter med at forstå jeres behov og udfordringer</li>
-            <li>Fokuserer på praktiske løsninger frem for teknologisk hype</li>
-            <li>Inddrager medarbejdere tidligt i processen</li>
-            <li>Tager etik og ansvarlig AI alvorligt</li>
-            <li>Leverer resultater, ikke bare PowerPoints</li>
+
+          <ul className="space-y-2 pl-4">
+            <li className="flex items-start gap-3">
+              <span className="text-primary mt-1">·</span>
+              <span>Starter med at forstå jeres behov og hverdag</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-primary mt-1">·</span>
+              <span>Fokuserer på praktiske løsninger frem for teknologisk hype</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-primary mt-1">·</span>
+              <span>Inddrager medarbejdere tidligt i processen</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-primary mt-1">·</span>
+              <span>Bygger rammer og struktur for tryg brug</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-primary mt-1">·</span>
+              <span>Leverer resultater, ikke bare PowerPoints</span>
+            </li>
           </ul>
 
-          <h2>Udover arbejdet</h2>
+          <h2 className="text-2xl font-bold text-foreground pt-4 font-heading">Baggrund</h2>
+
           <p>
-            Når jeg ikke arbejder med AI, er jeg engageret i lokalpolitik i Middelfart,
-            hvor jeg sidder i byrådet for Moderaterne. Jeg brænder for at gøre en
-            forskel - både gennem teknologi og gennem politik.
+            Jeg har arbejdet med AI-projekter i kommuner, regioner og private organisationer.
+            Jeg har set både succeser og fejlslagne projekter – og det har givet mig en dyb
+            forståelse for, hvad der skal til for at få AI til at skabe reel værdi.
+          </p>
+
+          <p>
+            Udover arbejdet med AI sidder jeg i byrådet i Middelfart for Moderaterne.
+            Jeg brænder for at gøre en forskel – både gennem teknologi og gennem politik.
           </p>
         </div>
 

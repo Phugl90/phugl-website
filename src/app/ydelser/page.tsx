@@ -4,60 +4,56 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Ydelser",
-  description: "Mine AI-konsulentydelser: strategi, implementering, workshops og løbende rådgivning.",
+  description: "phugl hjælper med AI-implementering, arbejdsgange, workshops og governance. Trygt, konkret og uden hype.",
 };
 
 const services = [
   {
-    id: "strategi",
-    title: "AI-strategi",
-    icon: "🎯",
-    description: "Udvikling af en klar AI-strategi tilpasset jeres organisation",
+    id: "implementering",
+    title: "Implementering",
+    description: "Få AI til at virke i praksis – ikke bare på papiret",
     details: [
-      "Analyse af nuværende processer og potentiale for AI",
-      "Identificering af use cases med højest værdi",
-      "Roadmap for implementering",
-      "Vurdering af risici og etiske overvejelser",
-      "Business case og ROI-beregning",
+      "Vælg de rigtige værktøjer til jeres behov",
+      "Byg løsninger der fungerer mandag morgen",
+      "Test og kvalitetssikring inden udrulning",
+      "Hjælp til at få medarbejderne med",
+      "Løbende justeringer efter behov",
     ],
   },
   {
-    id: "implementering",
-    title: "Implementering",
-    icon: "🚀",
-    description: "Hands-on hjælp til at få AI-løsninger i drift",
+    id: "arbejdsgange",
+    title: "Arbejdsgange",
+    description: "Byg AI ind i jeres daglige rutiner",
     details: [
-      "Valg af teknologi og leverandører",
-      "Projektledelse og koordinering",
-      "Integration med eksisterende systemer",
-      "Test og kvalitetssikring",
-      "Udrulning og change management",
+      "Identificér hvor AI skaber mest værdi",
+      "Design nye arbejdsgange med AI som redskab",
+      "Automatisér gentagne opgaver",
+      "Frigør tid til det vigtige arbejde",
+      "Dokumentation og best practices",
     ],
   },
   {
     id: "workshops",
     title: "Workshops",
-    icon: "🎓",
-    description: "Praktiske workshops der giver jeres medarbejdere AI-kompetencer",
+    description: "Praktisk læring der giver konkrete færdigheder",
     details: [
-      "Introduktion til AI for ledere",
-      "Hands-on med ChatGPT og andre værktøjer",
-      "Prompt engineering workshop",
-      "AI-etik og ansvarlig brug",
-      "Tilpassede workshops til jeres behov",
+      "Introduktion til AI for ledere og medarbejdere",
+      "Hands-on med ChatGPT, Claude og andre værktøjer",
+      "Prompt-teknikker der virker",
+      "Ansvarlig brug og etiske overvejelser",
+      "Tilpasset jeres branche og behov",
     ],
   },
   {
-    id: "raadgivning",
-    title: "Rådgivning",
-    icon: "💡",
-    description: "Løbende sparring og rådgivning om AI",
+    id: "governance",
+    title: "Governance",
+    description: "Rammer og struktur for tryg AI-brug",
     details: [
-      "Månedlig sparring om AI-trends",
-      "Review af AI-initiativer",
-      "Hjælp til vendor-evaluering",
-      "Teknisk due diligence",
-      "Ad-hoc rådgivning efter behov",
+      "Retningslinjer for AI-brug i organisationen",
+      "Kvalitetssikring af AI-genereret indhold",
+      "Risikostyring og compliance",
+      "Løbende evaluering og tilpasning",
+      "Tryghed for ledelse og medarbejdere",
     ],
   },
 ];
@@ -68,19 +64,18 @@ export default function YdelserPage() {
       <div className="mx-auto max-w-4xl">
         {/* Header */}
         <div className="mb-16 text-center">
-          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">Ydelser</h1>
+          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl font-heading">Ydelser</h1>
           <p className="mt-4 text-lg text-muted-foreground">
-            Fra strategi til implementering - jeg hjælper jer hele vejen med AI.
+            Fra første skridt til daglig drift – jeg hjælper jer med at få AI til at virke.
           </p>
         </div>
 
         {/* Services */}
-        <div className="space-y-12">
+        <div className="space-y-8">
           {services.map((service) => (
             <Card key={service.id} id={service.id} className="scroll-mt-20">
               <CardHeader>
-                <div className="text-4xl mb-2">{service.icon}</div>
-                <CardTitle className="text-2xl">{service.title}</CardTitle>
+                <CardTitle className="text-2xl font-heading">{service.title}</CardTitle>
                 <CardDescription className="text-base">
                   {service.description}
                 </CardDescription>
@@ -88,8 +83,8 @@ export default function YdelserPage() {
               <CardContent>
                 <ul className="space-y-2">
                   {service.details.map((detail) => (
-                    <li key={detail} className="flex items-start gap-2">
-                      <span className="text-primary mt-1">✓</span>
+                    <li key={detail} className="flex items-start gap-3">
+                      <span className="text-primary mt-0.5">·</span>
                       <span className="text-muted-foreground">{detail}</span>
                     </li>
                   ))}
@@ -101,9 +96,9 @@ export default function YdelserPage() {
 
         {/* CTA */}
         <div className="mt-16 text-center">
-          <h2 className="text-2xl font-bold">Interesseret?</h2>
+          <h2 className="text-2xl font-bold font-heading">Interesseret?</h2>
           <p className="mt-2 text-muted-foreground">
-            Book en gratis samtale, så vi kan tale om jeres behov.
+            Lad os tage en snak om, hvad der giver mening for jer.
           </p>
           <Button size="lg" className="mt-6" asChild>
             <Link href="/kontakt">Kontakt mig</Link>

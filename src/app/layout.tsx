@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, DM_Sans } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
@@ -9,26 +9,32 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
 export const metadata: Metadata = {
   title: {
-    default: "Visionair Velfair | AI-konsulentvirksomhed",
-    template: "%s | Visionair Velfair",
+    default: "phugl | AI, der letter din hverdag",
+    template: "%s | phugl",
   },
-  description: "Vi hjælper offentlige og private organisationer med at implementere AI på en ansvarlig og effektiv måde.",
-  keywords: ["AI", "kunstig intelligens", "konsulent", "offentlig sektor", "implementering", "velfærd"],
-  authors: [{ name: "Andreas Lausen" }],
+  description: "phugl gør AI brugbart og trygt i hverdagen – så arbejdet bliver lettere. Implementering, arbejdsgange, governance og kvalitetssikring.",
+  keywords: ["AI", "kunstig intelligens", "implementering", "governance", "arbejdsgange", "automatisering"],
+  authors: [{ name: "Andreas Hedelund Lausen" }],
   openGraph: {
     type: "website",
     locale: "da_DK",
     url: "https://phugl.dk",
-    siteName: "Visionair Velfair",
-    title: "Visionair Velfair | AI-konsulentvirksomhed",
-    description: "Vi hjælper organisationer med at implementere AI ansvarligt og effektivt.",
+    siteName: "phugl",
+    title: "phugl | AI, der letter din hverdag",
+    description: "phugl gør AI brugbart og trygt i hverdagen – så arbejdet bliver lettere.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Visionair Velfair",
-    description: "AI-konsulentvirksomhed med fokus på offentlig sektor",
+    title: "phugl",
+    description: "AI, der letter din hverdag. Trygt, konkret og uden hype.",
   },
 };
 
@@ -39,7 +45,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="da">
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body className={`${inter.variable} ${dmSans.variable} font-sans antialiased`}>
         <div className="flex min-h-screen flex-col">
           <Header />
           <main className="flex-1">{children}</main>
