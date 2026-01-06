@@ -12,9 +12,9 @@ export default function KontaktPage() {
       <div className="mx-auto max-w-2xl">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl font-heading">Kontakt</h1>
+          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl font-heading">Skal vi snakke?</h1>
           <p className="mt-4 text-lg text-muted-foreground">
-            Lad os tage en snak om, hvordan jeg kan hjælpe jer med AI.
+            Ring, skriv eller book et møde. Ingen salgstale – bare en ærlig snak om, hvad der giver mening for jer.
           </p>
         </div>
 
@@ -23,9 +23,9 @@ export default function KontaktPage() {
           {/* Book møde */}
           <Card className="border-primary">
             <CardHeader>
-              <CardTitle className="font-heading">Book et møde</CardTitle>
+              <CardTitle className="font-heading">Book en snak</CardTitle>
               <CardDescription>
-                Book en gratis og uforpligtende samtale direkte i min kalender.
+                Find en ledig tid i kalenderen – det er gratis og uforpligtende.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -35,62 +35,42 @@ export default function KontaktPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Book tid i kalenderen
+                  Find en tid
                 </a>
               </Button>
             </CardContent>
           </Card>
 
-          {/* Email */}
+          {/* Direct contact */}
           <Card>
             <CardHeader>
-              <CardTitle className="font-heading">Email</CardTitle>
+              <CardTitle className="font-heading">Skriv eller ring</CardTitle>
               <CardDescription>
-                Send mig en email, så vender jeg tilbage hurtigst muligt.
+                Jeg svarer så hurtigt jeg kan – som regel samme dag.
               </CardDescription>
             </CardHeader>
-            <CardContent>
-              <Button variant="outline" asChild className="w-full">
-                <a href="mailto:andreas@visionairvelfair.dk">
-                  andreas@visionairvelfair.dk
+            <CardContent className="space-y-3">
+              <Button variant="outline" asChild className="w-full justify-start">
+                <a href="mailto:andreas@phugl.dk" className="flex items-center gap-2">
+                  <span className="text-muted-foreground">Email:</span>
+                  andreas@phugl.dk
                 </a>
               </Button>
-            </CardContent>
-          </Card>
-
-          {/* Telefon */}
-          <Card>
-            <CardHeader>
-              <CardTitle className="font-heading">Telefon</CardTitle>
-              <CardDescription>
-                Ring eller skriv på SMS – jeg svarer, når jeg kan.
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <Button variant="outline" asChild className="w-full">
-                <a href="tel:+4528725842">
+              <Button variant="outline" asChild className="w-full justify-start">
+                <a href="tel:+4528725842" className="flex items-center gap-2">
+                  <span className="text-muted-foreground">Telefon:</span>
                   28 72 58 42
                 </a>
               </Button>
-            </CardContent>
-          </Card>
-
-          {/* LinkedIn */}
-          <Card>
-            <CardHeader>
-              <CardTitle className="font-heading">LinkedIn</CardTitle>
-              <CardDescription>
-                Forbind med mig på LinkedIn for nyheder og artikler.
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <Button variant="outline" asChild className="w-full">
+              <Button variant="outline" asChild className="w-full justify-start">
                 <a
                   href="https://linkedin.com/in/andreaslausen"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="flex items-center gap-2"
                 >
-                  linkedin.com/in/andreaslausen
+                  <span className="text-muted-foreground">LinkedIn:</span>
+                  andreaslausen
                 </a>
               </Button>
             </CardContent>
@@ -99,11 +79,7 @@ export default function KontaktPage() {
 
         {/* Info */}
         <div className="mt-12 text-center text-sm text-muted-foreground">
-          <p>
-            <strong>phugl</strong>
-          </p>
-          <p>CVR: 43975889</p>
-          <p>Middelfart, Danmark</p>
+          <p>phugl · CVR 43975889 · Middelfart</p>
         </div>
       </div>
     </div>

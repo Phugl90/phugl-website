@@ -16,64 +16,49 @@ export default function OmPage() {
         {/* Content */}
         <div className="mt-8 space-y-6 text-lg text-muted-foreground">
           <p className="text-xl text-foreground">
-            Jeg er Andreas – også kendt som phugl (med ph).
+            Hej. Jeg hedder Andreas, men de fleste kalder mig phugl (med ph).
           </p>
 
           <p>
-            phugl startede som et øgenavn, jeg tog ejerskab over. I dag er det mit arbejde:
-            at tage noget, der virker tungt og uoverskueligt, og gøre det lettere i praksis.
+            Det startede som et øgenavn fra håndboldholdet. I dag er det blevet mit brand –
+            og min tilgang til arbejdet: at tage noget, der virker tungt og uoverskueligt,
+            og gøre det lettere i praksis.
           </p>
 
           <p>
-            Jeg hjælper organisationer med at få AI til at virke i hverdagen – trygt,
-            konkret og uden hype. Vi kradser i overfladen af potentialet, men vi gør det brugbart.
-            Ikke smartere for smarthedens skyld – bare mere overskud, mere kvalitet og mindre bøvl.
+            Jeg hjælper virksomheder og organisationer med at få AI til at fungere i hverdagen.
+            Ikke de vilde science fiction-ting – bare de værktøjer, der rent faktisk sparer tid
+            og gør arbejdet nemmere. Trygt, konkret og uden hype.
           </p>
 
-          <h2 className="text-2xl font-bold text-foreground pt-4 font-heading">Min tilgang</h2>
+          <h2 className="text-2xl font-bold text-foreground pt-4 font-heading">Sådan arbejder jeg</h2>
 
           <p>
-            Jeg tror på, at løsninger skal virke mandag morgen. Det handler ikke om de nyeste
-            buzzwords eller de mest avancerede modeller. Det handler om at finde de steder,
-            hvor AI rent faktisk skaber værdi for jer.
+            Jeg starter altid med at forstå, hvad I faktisk laver i hverdagen. Hvad tager tid?
+            Hvad er frustrerende? Hvad ville I ønske, I havde mere tid til?
           </p>
 
-          <p>Konkret betyder det, at jeg:</p>
+          <p>
+            Derefter finder vi sammen ud af, hvor AI kan hjælpe – og hvor det ikke kan.
+            For nogle gange er svaret, at I ikke har brug for AI. Det siger jeg også.
+          </p>
 
-          <ul className="space-y-2 pl-4">
-            <li className="flex items-start gap-3">
-              <span className="text-primary mt-1">·</span>
-              <span>Starter med at forstå jeres behov og hverdag</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-primary mt-1">·</span>
-              <span>Fokuserer på praktiske løsninger frem for teknologisk hype</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-primary mt-1">·</span>
-              <span>Inddrager medarbejdere tidligt i processen</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-primary mt-1">·</span>
-              <span>Bygger rammer og struktur for tryg brug</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-primary mt-1">·</span>
-              <span>Leverer resultater, ikke bare PowerPoints</span>
-            </li>
-          </ul>
+          <p>
+            Når vi har fundet de rigtige steder, bygger vi det ind i jeres arbejdsgange,
+            så det bliver en naturlig del af hverdagen. Ikke et ekstra system at huske på.
+          </p>
 
           <h2 className="text-2xl font-bold text-foreground pt-4 font-heading">Baggrund</h2>
 
           <p>
-            Jeg har arbejdet med AI-projekter i kommuner, regioner og private organisationer.
-            Jeg har set både succeser og fejlslagne projekter – og det har givet mig en dyb
-            forståelse for, hvad der skal til for at få AI til at skabe reel værdi.
+            Jeg har arbejdet med AI i kommuner, regioner og private virksomheder.
+            Jeg har set projekter, der gik rigtig godt – og projekter, der gik i vasken.
+            Det har lært mig, hvad der faktisk skal til for at få det til at virke.
           </p>
 
           <p>
-            Udover arbejdet med AI sidder jeg i byrådet i Middelfart for Moderaterne.
-            Jeg brænder for at gøre en forskel – både gennem teknologi og gennem politik.
+            Ved siden af arbejdet med AI sidder jeg i byrådet i Middelfart for Moderaterne.
+            Så jeg ved også lidt om, hvordan den offentlige sektor fungerer indefra.
           </p>
         </div>
 

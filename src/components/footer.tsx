@@ -11,6 +11,7 @@ const footerLinks = {
   ],
   company: [
     { name: "Om phugl", href: "/om" },
+    { name: "Nyheder", href: "/nyheder" },
     { name: "Blog", href: "/blog" },
     { name: "Kontakt", href: "/kontakt" },
   ],
@@ -76,8 +77,8 @@ export function Footer() {
             <h3 className="font-semibold">Kontakt</h3>
             <ul className="mt-4 space-y-2 text-sm text-white/70">
               <li>
-                <a href="mailto:andreas@visionairvelfair.dk" className="hover:text-white hover:underline">
-                  andreas@visionairvelfair.dk
+                <a href="mailto:andreas@phugl.dk" className="hover:text-white hover:underline">
+                  andreas@phugl.dk
                 </a>
               </li>
               <li>
