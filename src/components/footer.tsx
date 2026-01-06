@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
 
 const footerLinks = {
@@ -22,8 +23,14 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           {/* Brand */}
           <div className="md:col-span-1">
-            <Link href="/" className="text-xl font-semibold font-heading">
-              phugl
+            <Link href="/" className="inline-block">
+              <Image
+                src="/logo-web.png"
+                alt="phugl"
+                width={100}
+                height={33}
+                className="h-7 w-auto brightness-0 invert"
+              />
             </Link>
             <p className="mt-4 text-sm text-white/70">
               AI, der letter din hverdag. Trygt, konkret og uden hype.

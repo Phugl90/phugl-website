@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
@@ -18,10 +19,15 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <nav className="container mx-auto flex h-16 items-center justify-between px-4 max-w-[1100px]">
         {/* Logo */}
-        <Link href="/" className="flex items-center space-x-2">
-          <span className="text-xl font-semibold tracking-tight" style={{ fontFamily: 'var(--font-dm-sans)' }}>
-            phugl
-          </span>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/logo-web.png"
+            alt="phugl"
+            width={120}
+            height={40}
+            priority
+            className="h-8 w-auto"
+          />
         </Link>
 
         {/* Desktop navigation */}
