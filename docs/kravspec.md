@@ -914,44 +914,87 @@ import Image from "next/image";
 
 ---
 
-## 10. Implementeringsplan
+## 10. Implementeringsstatus
 
-### Fase 1: Grundlæggende forbedringer (uge 1)
-- [ ] Upload og integrer logo
-- [ ] Forbedre tekster på alle sider
+### Fase 1: Grundlæggende forbedringer ✅ FÆRDIG
+- [x] Upload og integrer logo (`/public/logo-web.png`)
+- [x] Forbedre tekster på alle sider (mere jordnær, personlig tone)
 - [ ] Tilføj billede af Andreas
-- [ ] Opdater kontakt-side
+- [x] Opdater kontakt-side (simplificeret, uformel)
 
-### Fase 2: Nyheds-infrastruktur (uge 2)
-- [ ] Opret database-tabeller
-- [ ] Byg `/nyheder` side
-- [ ] Opret API routes
-- [ ] Tilføj "Seneste nyheder" på forsiden
+### Fase 2: Nyheds-infrastruktur ✅ FÆRDIG
+- [x] Opret database-tabeller (`025_news_and_content_system.sql`)
+- [x] Byg `/nyheder` side med placeholder
+- [x] Opret API routes (`/api/news`, `/api/news/sync`)
+- [x] Tilføj "Seneste nyheder" på forsiden
+- [x] Supabase-integration i phugl-website
 
-### Fase 3: OpenAI Agents SDK setup (uge 3)
-- [ ] Opret vector store i OpenAI platform
-- [ ] Upload eksisterende content til FileSearch
-- [ ] Implementer News Extractor Agent
-- [ ] Test med TLDR-mails
-- [ ] Sæt auto-publicering op
+### Fase 3: Agent Service Setup ✅ FÆRDIG
+- [x] News Extractor Agent (`agent-service/agent_definitions/content_agents.py`)
+- [x] Guide Writer Agent
+- [x] Social Writer Agent
+- [x] Content Coordinator Agent
+- [x] API endpoints i agent-service (`/content/extract-news`, `/content/generate-guide`, etc.)
 
-### Fase 4: Guide-system (uge 4)
-- [ ] Implementer Guide Writer Agent
-- [ ] Opret guide-forslag workflow
-- [ ] Integrer med task feed
-- [ ] Test godkendelsesflow
+### Fase 4: Næste skridt
+- [ ] Test agent pipeline med rigtige TLDR-mails
+- [ ] Sæt cron job op til automatisk scanning
+- [ ] Integrer guide-godkendelse med AI-assistent task feed
+- [ ] Deploy agent-service til Railway
 
-### Fase 5: Social media (uge 5)
-- [ ] Implementer Social Writer Agent
-- [ ] Opret social posts for alle platforme
+### Fase 5: Social media (fremtid)
+- [ ] Test social posts generation
 - [ ] Integrer godkendelsesflow
 - [ ] (Valgfrit) API-integration til automatisk posting
 
-### Fase 6: Finpudsning (løbende)
+### Fase 6: Finpudsning (fremtid)
 - [ ] Optimér agent prompts
 - [ ] Tilføj analytics
 - [ ] RSS feed for nyheder
 - [ ] Email-notifikationer for nye guides
+
+---
+
+## 10.1 Implementerede filer
+
+### phugl-website
+```
+src/app/
+├── api/news/
+│   ├── route.ts          # GET /api/news - hent nyheder
+│   └── sync/route.ts     # POST /api/news/sync - trigger sync
+├── nyheder/page.tsx      # Nyheds-side
+├── page.tsx              # Forside med "Seneste nyheder" sektion
+├── om/page.tsx           # Opdateret om-side
+├── ydelser/page.tsx      # Opdateret med eksempler
+└── kontakt/page.tsx      # Simplificeret kontakt
+
+src/lib/
+└── supabase.ts           # Supabase client + queries
+
+src/components/
+├── header.tsx            # Med logo og "Nyheder" link
+└── footer.tsx            # Med logo og phugl.dk email
+```
+
+### AI-assistent
+```
+agent-service/agent_definitions/
+└── content_agents.py     # Alle content agenter:
+                          # - news_extractor_agent
+                          # - guide_writer_agent
+                          # - social_writer_agent
+                          # - content_coordinator_agent
+
+agent-service/main.py     # Nye endpoints:
+                          # - POST /content/extract-news
+                          # - POST /content/generate-guide
+                          # - POST /content/generate-social
+                          # - POST /content/process-newsletter
+
+supabase/migrations/
+└── 025_news_and_content_system.sql  # Database schema
+```
 
 ---
 
