@@ -1,6 +1,6 @@
-# Visionair Velfair - Hjemmeside
+# phugl - Hjemmeside
 
-Hjemmeside for Visionair Velfair (phugl.dk) - AI-konsulentvirksomhed.
+Hjemmeside for phugl (phugl.dk) - AI-konsulentvirksomhed.
 
 ## Projekt Struktur
 
