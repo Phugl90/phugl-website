@@ -16,7 +16,7 @@ const services = [
   },
   {
     title: "Workshops",
-    description: "Ikke death by PowerPoint. Hands-on med de værktøjer, I kommer til at bruge. Alle går hjem med noget, de kan bruge dagen efter.",
+    description: "Ikke slides på slides. Praktisk arbejde med de værktøjer, I kommer til at bruge. Alle går hjem med noget, de kan bruge dagen efter.",
     href: "/ydelser#workshops",
   },
   {
@@ -65,7 +65,7 @@ export default function HomePage() {
           </h1>
           <p className="mt-6 text-lg text-muted-foreground md:text-xl">
             Jeg hjælper dig med at få AI til at fungere i hverdagen.
-            Uden buzzwords. Uden magic. Bare noget, der virker.
+            Uden buzzwords. Uden hokuspokus. Bare noget, der virker.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Button size="lg" asChild>
@@ -109,7 +109,7 @@ export default function HomePage() {
               <CardContent>
                 <Link
                   href={service.href}
-                  className="text-sm font-medium text-primary underline hover:no-underline"
+                  className="text-sm font-medium text-primary hover:underline"
                 >
                   Læs mere
                 </Link>

@@ -33,11 +33,11 @@ const services = [
   {
     id: "workshops",
     title: "Workshops",
-    description: "Ikke death by PowerPoint. Hands-on med de værktøjer, I kommer til at bruge. Alle går hjem med noget, de kan bruge dagen efter.",
+    description: "Ikke slides på slides. Praktisk arbejde med de værktøjer, I kommer til at bruge. Alle går hjem med noget, de kan bruge dagen efter.",
     example: "En ledergruppe på 12 fik en halvdagsworkshop. Efter frokost havde alle lavet deres første AI-assisterede notat. To måneder senere brugte 10 af dem stadig værktøjerne dagligt.",
     details: [
       "I arbejder med jeres egne opgaver, ikke fiktive eksempler",
-      "Alle niveauer kan være med – fra skeptikere til early adopters",
+      "Alle niveauer kan være med – fra skeptikere til entusiaster",
       "Jeg følger op bagefter, så I ikke står alene med spørgsmål",
     ],
   },

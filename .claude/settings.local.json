@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nFix sprogfejl og opdater booking-link\n\n- Ret \"Uden magic\" til \"Uden hokuspokus\" på forsiden\n- Erstat engelske udtryk med danske \\(death by PowerPoint, Hands-on, early adopters\\)\n- Opdater blog-post fra Visionair Velfair til phugl branding\n- Ret link-styling til standard hover:underline\n- Opdater Calendly booking-link til andreas-phugl/30min\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+    ]
+  }
+}

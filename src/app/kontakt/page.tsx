@@ -31,7 +31,7 @@ export default function KontaktPage() {
             <CardContent>
               <Button asChild className="w-full">
                 <a
-                  href="https://calendly.com/andreaslausen"
+                  href="https://calendly.com/andreas-phugl/30min"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
