@@ -20,9 +20,9 @@ export default function OmPage() {
           </p>
 
           <p>
-            Det startede som et øgenavn fra håndboldholdet. I dag er det blevet mit brand –
-            og min tilgang til arbejdet: at tage noget, der virker tungt og uoverskueligt,
-            og gøre det lettere i praksis.
+            Det startede som "tykfugl" i 3. klasse – et øgenavn jeg tog ejerskab over.
+            I dag er det blevet mit brand og min tilgang til arbejdet: at tage noget,
+            der virker tungt og uoverskueligt, og gøre det lettere i praksis.
           </p>
 
           <p>
@@ -57,7 +57,7 @@ export default function OmPage() {
           </p>
 
           <p>
-            Ved siden af arbejdet med AI sidder jeg i byrådet i Middelfart for Moderaterne.
+            Ved siden af arbejdet med AI er jeg politisk aktiv for Moderaterne.
             Så jeg ved også lidt om, hvordan den offentlige sektor fungerer indefra.
           </p>
         </div>
