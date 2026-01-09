@@ -1,0 +1,28 @@
+name: Auto-merge Claude branches
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  auto-merge:
+    # Kun kør for branches der starter med 'claude/'
+    if: startsWith(github.head_ref, 'claude/')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Auto-merge PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh pr merge ${{ github.event.pull_request.number }} \
+            --repo ${{ github.repository }} \
+            --squash \
+            --auto \
+            --delete-branch
